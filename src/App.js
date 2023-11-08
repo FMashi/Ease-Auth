@@ -9,15 +9,17 @@ import {
   // PasswordResetConfirm,
   // EmailVerification,
 } from "./pages/index";
+import './index.css';
 
 function App() {
   return (
+    
     <Router>
     <Layout>
       <Routes>
         <Route path="/" Component={Home}></Route>
         <Route path="Login/" Component={Login}></Route>
-        <Route path="signup/" Component={Signup}></Route>
+        {/* <Route path="Register/" Component={Register}></Route>
         <Route path="change/password/" Component={PasswordChange}></Route>
         <Route path="reset/password/" Component={PasswordReset}></Route>
         <Route
@@ -27,10 +29,11 @@ function App() {
         <Route
           path="/api/auth/registration/verify-email/:key"
           Component={EmailVerification}
-        ></Route>
+        ></Route> */}
       </Routes>
     </Layout>
   </Router>
+  
   );
 }
 
